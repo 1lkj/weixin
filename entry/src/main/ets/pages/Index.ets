@@ -1,9 +1,17 @@
+
+
+
 @Entry
 @Component
 struct Index {
 
+  // @State
+
+
   build() {
     Column() {
+
+
 
     }
     .height('100%')
