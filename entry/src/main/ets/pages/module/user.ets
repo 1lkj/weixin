@@ -1,0 +1,65 @@
+import { UserInfo } from "./module";
+
+
+export const DefaultUserList:UserInfo[]=[
+  {
+    user_id:"1",
+    avater:$r("app.media.ic_public_trans_text"),
+    username:"李佳豪"
+  },
+  {
+    user_id:"2",
+    avater:$r("app.media.ic_public_sound"),
+    username:"李佳仪"
+  },
+  {
+    user_id:"3",
+    avater:$r("app.media.ic_public_right"),
+    username:"李英豪"
+  },
+  {
+    user_id:"4",
+    avater:$r("app.media.ic_public_output"),
+    username:"付奥楠"
+  },
+  {
+    user_id:"5",
+    avater:$r("app.media.ic_public_trans_text"),
+    username:"李佳豪"
+  },
+  {
+    user_id:"6",
+    avater:$r("app.media.ic_public_sound"),
+    username:"李佳仪"
+  },
+  {
+    user_id:"7",
+    avater:$r("app.media.ic_public_right"),
+    username:"李英豪"
+  },
+  {
+    user_id:"8",
+    avater:$r("app.media.ic_public_output"),
+    username:"付奥楠"
+  },
+  {
+    user_id:"9",
+    avater:$r("app.media.ic_public_trans_text"),
+    username:"李佳豪"
+  },
+  {
+    user_id:"10",
+    avater:$r("app.media.ic_public_sound"),
+    username:"李佳仪"
+  },
+  {
+    user_id:"11",
+    avater:$r("app.media.ic_public_right"),
+    username:"李英豪"
+  },
+  {
+    user_id:"12",
+    avater:$r("app.media.ic_public_output"),
+    username:"付奥楠"
+  },
+]
