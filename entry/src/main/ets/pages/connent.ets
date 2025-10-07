@@ -1,5 +1,6 @@
 import { UserInfo } from "./module/module"
 import { DefaultUserList } from "./module/user"
+import { router } from "@kit.ArkUI"
 
 @Entry
 @Component
@@ -13,8 +14,17 @@ export struct Connent {
     this.filterList = DefaultUserList
   }
 
+  //监听输入框变化 并且查找功能实现
+  @Watch("Filter")
   @State
   name:string=""
+
+  //查找人员功能
+  Filter(){
+    this.filterList = DefaultUserList.filter((item:UserInfo)=>{
+      return item.username.includes(this.name)
+    })
+  }
 
   build() {
     Column() {
@@ -46,7 +56,21 @@ export struct Connent {
             }
             .width("100%")
             .padding(15)
+            .stateStyles({
+              pressed:{
+                .backgroundColor($r("app.color.back_color"))
+              },
+              normal:{
+                .backgroundColor($r("app.color.white"))
+              }
+            })
           }
+          .onClick(()=>{
+            router.pushUrl({
+              url:"pages/ChatDetail/ChatDetail",
+              params:item
+            })
+          })
         })
       }
     }

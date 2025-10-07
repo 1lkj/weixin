@@ -43,11 +43,11 @@ struct Index {
   CusCommtent(item:tabbar,) {
     Column() {
       Image(this.db[this.current].wenzi === item.wenzi ? item.zp : item.photo)
-        .width(40)
-        .height(40)
-      Text(this.db[this.current].wenzi === item.wenzi ? $r("app.color.black"):$r("app.media.ic_public_contacts_group_filled"))
+        .width(30)
+        .height(30)
+      Text(item.wenzi)
         .fontSize(10)
-        .fontColor(Color.Black)
+        .fontColor(this.db[this.current].wenzi === item.wenzi ? $r("app.color.primary"):$r("app.color.text_primary"))
     }
   }
 
