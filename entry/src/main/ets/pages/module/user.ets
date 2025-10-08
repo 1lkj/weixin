@@ -63,3 +63,10 @@ export const DefaultUserList:UserInfo[]=[
     username:"付奥楠"
   },
 ]
+
+//定义自己发送的信息
+export const currentUser:UserInfo={
+  username:"Mrli",
+  avater:$r("app.media.ic_statusbar_gps"),
+  user_id:"1",
+}
